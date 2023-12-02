@@ -16,7 +16,7 @@ students = [
 names = dict()
 
 for student in students:
-    if student['first_name'] not in names.keys():
+    if student['first_name'] not in names:
         names[student['first_name']] = 1
     else:
         names[student['first_name']] += 1
